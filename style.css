@@ -1,0 +1,79 @@
+/*
+ Theme Name:   MAMP test
+ Theme URI:    http://
+ Description:  Responsive Child Theme
+ Author:       Joe Higgins
+ Author URI:   http://joehiggins.me
+ Template:     responsive
+ Version:      1.0.0
+ Tags: custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, right-sidebar, theme-options, threaded-comments, full-width-template, sticky-post, translation-ready, rtl-language-support, featured-images, blog
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  responsive-child
+
+ Based on Responsive theme from CyberChimps
+
+*/
+
+/* FULL WIDTH */
+
+/* HEADER OVERRIDES */
+/* removes padding a top of header */
+div.skip-container.cf {
+  padding: 0 !important;
+}
+/* adds full width background to header. Get URL from WP media library */
+div#header {
+  background: no-repeat center/100% url("http://mamp-wp-test:8888/wp-content/uploads/2018/04/headerBkgnd.png");
+}
+#logo {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+#logo a img {
+  width: 25%;
+  padding: 1rem;
+}
+
+/* MEGA MENU OVERRIDES */
+@media (max-width: 980px) {
+  #mega-menu-wrap-header-menu {
+      position: absolute;
+      width: 100%;
+      z-index: 999;
+  }
+}
+
+
+/* body.home #wrapper {
+    margin: 0;
+} */
+/* #header {
+  background: center / contain no-repeat url("https://images.unsplash.com/photo-1509808147497-a7fb0bd9ecb9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0b9a861147c645340e2a21f52536f59f&auto=format&fit=crop&w=334&q=80");
+} */
+/* .home #container, #logo, #logo a, #logo a img, #content-outer {
+  margin: 0 !important;
+	width: 100% !important;
+}
+.home #header {
+	margin: 0 auto;
+	max-width: 100%;
+}
+.home-widgets {
+	max-width: 960px;  margin: 0 auto;
+}
+
+#container {
+    margin: 0 auto;
+	  width: 100%;
+    max-width: none;
+    padding: 0;
+}
+ */
+
+//Hide stuff - check this later!!
+
+#header.main-nav, div.breadcrumb-list, div.post-entry, .home-widgets {
+display: none;
+}
