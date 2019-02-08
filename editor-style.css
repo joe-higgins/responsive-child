@@ -1,0 +1,27 @@
+/* These styles are used only in the backend editor */
+
+/* Here you can override any CSS which causes layout or visibility problems in the editor, */
+/* and duplicate any Theme-CSS to make the editor display look more like the real frontend */
+
+/* Custom editor styles for TS child theme */
+
+.background-icon	{
+	position: relative;
+	margin: -2rem 0 -5rem 0;
+    padding: 3rem 0 4rem 0;
+	background: url('images/circle_icon_cropped.png') top -5rem left -20rem / 70rem no-repeat, url('images/circle_icon_cropped.png') top 150rem right -22rem / 70rem no-repeat;
+}
+
+.push-right {
+    margin-left: 3rem !important;
+}
+.scriptina-title-white-lg, .scriptina-title-white-sm {
+	display: block;
+	font-family: 'scriptina';
+	font-size: 3rem !important;
+/* 	font-weight: bold; */
+/* 	letter-spacing: 0.2rem; */
+    line-height: 3rem;
+/* 	padding: 0 1.8rem; */
+	margin: -4rem 2.6rem 3rem 2.6rem;
+}
