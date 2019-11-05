@@ -8,12 +8,13 @@
 .background-icon	{
 	position: relative;
 	margin: -2rem 0 -5rem 0;
-    padding: 3rem 0 4rem 0;
+    padding: 0;
 	background: url('images/circle_icon_cropped.png') top -5rem left -20rem / 70rem no-repeat, url('images/circle_icon_cropped.png') top 150rem right -22rem / 70rem no-repeat;
 }
 
 .push-right {
-    margin-left: 3rem !important;
+	padding: 0 !important;
+    margin-left: 0 !important;
 }
 .scriptina-title-white-lg, .scriptina-title-white-sm {
 	display: block;

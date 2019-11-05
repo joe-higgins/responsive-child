@@ -1,5 +1,121 @@
 /* Custom editor styles for TS child theme */
 
-.scriptina {
-  font-family: "Scriptina";
+
+/* ========= EDITOR STYLES ============== */
+	/* Wrapper for main text below hero image */
+.background-icon	{
+	position: relative;
+	top: 0rem; 
+/* 	2 */
+	margin: 0rem 0 0rem 0;
+/* 	-3t -3b*/
+    padding: 0rem 0 0rem 0;
+/* 	3t 4b */
+	background: url('images/circle_icon_cropped_sm.png') top -7rem left -20rem / 70rem no-repeat, url('images/circle_icon_cropped_sm.png') top 150rem right -22rem / 70rem no-repeat;
 }
+.push-right {
+	position: relative;
+    top: 0;
+	padding: 0 14rem 5rem 0;
+	margin-left: 26rem !important;
+}
+.scriptina {
+	display: block;
+	font-family: 'scriptina';
+	font-size: 2.4rem !important;
+	font-weight: 600;
+    line-height: 5rem;
+	margin: 1rem 2.6rem 3rem 2.6rem;
+}
+.scriptina-red {
+/* 	display: block; */
+	font-family: 'scriptina';
+	color: #632122;
+	font-size: 2.4rem !important;
+	font-weight: 600;
+}
+.scriptina-title-white-lg, .scriptina-title-grey-lg, .scriptina-title-ltgrey-lg  {
+	position: relative;
+	font-family: 'scriptina';
+	font-size: 16rem !important;
+	line-height: 9rem;
+	top: -4.5rem;
+    left: 2rem;
+    margin: 0 0 0 0;
+}
+.scriptina-title-white-sm, .scriptina-title-grey-sm, .scriptina-title-ltgrey-sm  {
+	position: relative;
+	font-family: 'scriptina';
+	font-size: 9rem !important;
+	line-height: 9rem;
+	top: -6rem;
+	left: 6rem;
+	margin: 0 0 0 0;
+}
+.scriptina-title-white-lg, .scriptina-title-white-sm {
+	display: block;
+	overflow: visible;
+	background-clip: text;
+	color: #fff;
+	text-shadow: 0 0 2em transparent, #464749 1px 1px 4px;
+/* 	-webkit-transform: translateZ(0); */
+	-webkit-text-shadow: 0 0 2em transparent, #464749 1px 1px 4px;
+}
+.scriptina-title-grey-lg, .scriptina-title-grey-sm  {
+	color: #464749;
+}
+.scriptina-title-ltgrey-lg, .scriptina-title-ltgrey-sm  {
+	color: #babdc1; /* light grey */
+}
+.red-bold-text, .red-intro-text {
+	font-size: 1.2rem;
+	color: #632122;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.red-intro-text {
+	position: relative;
+	display: inline-block;
+/* 	width: 48%; */
+	margin: 0rem 0 1.4rem 8rem;
+}
+.move-up {
+	margin-top: 0;
+}
+.quote-block {
+	font-style: italic;
+	line-height: 2.6rem;
+	width: 22%;
+/* 	border-radius: 2rem; */
+	margin: -11rem 0 0 6rem;
+	padding: 2rem;
+	float: right;
+	background-color: rgba(255,255,255, 0.3);
+	border-radius: 4px;
+	-webkit-box-shadow: 1px 2px 10px 1px rgba(204,204,204,0.3);
+	-moz-box-shadow: 1px 2px 10px 1px rgba(204,204,204,0.3);
+	box-shadow: 1px 2px 10px 2px rgba(204,204,204,0.3);
+}
+.quote-block-no-intro {
+	margin: -1rem 0 0 6rem;
+}
+.hide-not-mobile {
+	display: none;
+}
+.signup-button	{
+	margin: 0 auto;
+	width: 12rem;
+	text-align: center;
+/* 	float: right; */
+	background-color: rgba(147,149,152, 0.3);
+	padding:  2rem 3rem 0rem;
+/* 	margin: 3rem 6rem 2.4rem 0 !important; */
+	border-radius: 4px;
+	-webkit-box-shadow: 1px 2px 5px 1px rgba(204,204,204,0.3);
+	-moz-box-shadow: 1px 2px 5px 1px rgba(204,204,204,0.3);
+	box-shadow: 1px 2px 5px 2px rgba(204,204,204,0.3);
+}
+.float-right	{
+	float: right;
+}
+/* ========= END EDITOR STYLES ============== */

@@ -86,19 +86,68 @@ body {
 /*  override theme margins */
 p, hr, dl, pre, form, table, address, blockquote {
 	/* margin: 1.6rem 6rem; */
-	margin: .4rem 0 1rem 0;
+/* 	margin: .4rem 0 1rem 0; */
+	margin: 0;
 }
 a, a:visited {
 	color: #632122 !important;
 	text-decoration: underline;
 }
+/* #fld_6637317_1-wrap  */
+
+input[type=submit] {
+	color: #464749;
+}
 #wpadminbar a {
 	color: white !important;
 }
+figcaption {
+	font-size: .5rem;
+	text-align: center;
+	line-height: 0;
+}
 /* ====== GENERAL RESET CODES ========= */
 
+/* override space from edit bar  */
+.post-edit {
+margin: 0;
+}
+/* RESPONSIVE THEME MENU OVERRIDE */
+/* Responsive 3.16.3 added a .main-nav class that needs to be hidden */
+
+.main-nav {
+    display: none;
+}
+/*remove post meta display*/
+.post-meta { 
+display: none !important; 
+}
+
+/*remove background color for contact form submit button*/
+input[type=submit]{
+    background-color: white;
+}
+/*remove margin on home page*/
+
+#content-blog {
+   margin: 0;
+}
+/* ==========Gutenberg adjustments ======== */
+.place-page-block {
+	margin: -3em 0 0 0;
+}
+
+#content {
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.wp-block-image {
+    margin: 0 !important;
+}
+
 	/* REMOVES TITLES ON ALL POSTS AND PAGES! */
-h1.entry-title, h1.post.title {
+h1.entry-title, h1.post.title, .entry-title, .post-title {
   display: none;
 }
 	/* Hide stuff - check this later!! */
@@ -121,9 +170,19 @@ display: none;
   max-width: 1800px !important;
   background-color: white !important;
 }
-body.full-width-layout #content-outer, body.default-layout #content-outer, body.full-width-no-box #content-outer {
-    max-width: 100% !important;
+/* Update for Responsive 3.16.13 to force footer to span full width */
+
+.boxed-layout .content-area, body.default-layout #content-outer, body.full-width-layout #content-outer, body.full-width-no-box #content-outer, .menu {
+    width: 1800px;
+    max-width: 100%;
 }
+
+/* fix for earlier version on Responsive theme */
+/* body.full-width-layout #content-outer, body.default-layout #content-outer, body.full-width-no-box #content-outer {
+	width: 1800px;
+    max-width: 100% !important;
+} */
+
 div#content-full {
     margin: 0;
 }
@@ -139,21 +198,26 @@ blockquote {
 .mega-menu-header-menu #mobile-nav-button {
 	display: none !important;
 }
+
+
 /* ======== END GENERAL RESET CODE ======== */
 
 /* ========= EDITOR STYLES ============== */
 	/* Wrapper for main text below hero image */
 .background-icon	{
 	position: relative;
-	top: 2rem;
-	margin: -2rem 0 -3rem 0;
-    padding: 3rem 0 4rem 0;
+	top: 0rem; 
+/* 	2 */
+	margin: 0rem 0 0rem 0;
+/* 	-3t -3b*/
+    padding: 0rem 0 0rem 0;
+/* 	3t 4b */
 	background: url('images/circle_icon_cropped_sm.png') top -7rem left -20rem / 70rem no-repeat, url('images/circle_icon_cropped_sm.png') top 150rem right -22rem / 70rem no-repeat;
 }
 .push-right {
 	position: relative;
     top: 0;
-	padding: 0 14rem 0 0 !important;
+	padding: 0 14rem 5rem 0;
 	margin-left: 36rem !important;
 }
 .scriptina {
@@ -176,7 +240,7 @@ blockquote {
 	font-family: 'scriptina';
 	font-size: 16rem !important;
 	line-height: 9rem;
-	top: -10.5rem;
+	top: -7.5rem;
     left: 6rem;
     margin: 0 0 0 0;
 }
@@ -185,7 +249,7 @@ blockquote {
 	font-family: 'scriptina';
 	font-size: 9rem !important;
 	line-height: 9rem;
-	top: -9rem;
+	top: -6rem;
 	left: 6rem;
 	margin: 0 0 0 0;
 }
@@ -204,7 +268,8 @@ blockquote {
 .scriptina-title-ltgrey-lg, .scriptina-title-ltgrey-sm  {
 	color: #babdc1; /* light grey */
 }
-.red-bold-text, .red-intro-text {
+.red-bold-text, .red-bold-text a, .red-intro-text {
+	font-size: 1.4rem;
 	color: #632122;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -240,7 +305,7 @@ blockquote {
 }
 .signup-button	{
 	margin: 0 auto;
-	width: 12rem;
+	width: 20rem;
 	text-align: center;
 /* 	float: right; */
 	background-color: rgba(147,149,152, 0.3);
@@ -307,6 +372,9 @@ div.skip-container.cf {
 	text-align: center;
 	font-weight: 100;
 }
+
+
+
 
 /* ======= MEGA MENU OVERRIDES ============ */
 
@@ -414,10 +482,13 @@ a.mega-menu-link:before {
 /* ======= CONTENT OVERRIDES ========== */
 
 /* SLIDESHOW (and place page img) OVERRIDES */
+/* 	background color for About Us page */
+/* this couldn't be good!' */
+/* #post-2452  could put post ref in */
+#post-2542 .alignnormal {
+/*     background-color: rgba(201, 230, 254, 0.6); */
+}
 
-/* .caption {
-	display: none;
-} */
 .wp-caption {
     background: none;
     border: none;
@@ -454,21 +525,26 @@ a.mega-menu-link:before {
  	/* PLACES PAGES */
 #place_wrap  {
 	margin: 0;
-	padding: 0 0 3rem 0;
+	padding: 0 0 0 0;
 	
 } 
-img.banner-img-lg {
-	position: relative;
+img.banner-img-lg, .banner-img-lg img {
+/* 	position: relative;
 	width: 100vw;
-	object-fit: cover;
+	object-fit: cover; */
+	position: relative;
+    width: 100vw;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: 0 100%;
 }
-img.content-img {
+img.content-img, .content-img img {
 	margin: 1rem 2rem 2rem 0;
 }
 img.newsletter-img {
 	margin: 2rem;
 }
-img.content-img, img.newsletter-img, img.left-img {
+img.content-img, img.newsletter-img, img.left-img, .content-img img, .newsletter-img img, .left-img img {
 	border-radius:4px;
 	-webkit-box-shadow: 1px 2px 10px 1px rgba(204,204,204,0.3);
 	-moz-box-shadow: 1px 2px 10px 1px rgba(204,204,204,0.3);
@@ -564,7 +640,9 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
 div.wpforms-container-full .wpforms-form input.wpforms-field-medium {
 	max-width: 100% !important;
 }
-
+label {
+    color: #464749;
+}
 #widgets {
     margin-top: 23rem;
 }
@@ -598,9 +676,136 @@ img.link-img {
    	object-fit: cover;
 	overflow: hidden;
 }
+/* Newsworthy page */
+.ts-news-col-l {
+	min-width: 150px;
+}
+.ts-news-col-l img {
+	width: 150px;
+	height: 150px;
+}
+.ts-news-container img {
+	width: 150px !important;
+	height: 150px;
+}
 
+/* ==== Meet the team/bio pages ========== */
+.ts-meet-the-team-flex-box .wp-block-group__inner-container {
+	display: flex;
+	flex-flow: row wrap;
+  	justify-content: space-around;
+}
+.ts-emp-push-right {
+	position: relative;
+    top: 0;
+	margin-left: 22rem !important;
+/* 	padding-right: 5rem; */
+}
+.ts-team-push-right {
+	position: relative;
+    top: 0;
+	margin-left: 50rem !important;
+	padding-right: 5rem;
+}
+.ts-employee-header {
+/* 	height: 300px;
+	width: 100%; */
+	object-fit: contain;
+	overflow: hidden;
+	background-color: rgba(201, 230, 254, 0.6);
+}
+.ts-employee-content {
+	padding: 4rem 5rem 0 0;
+	font-size: 1.3rem;
+/* 	padding-right: 5rem; */
+}
+.ts-bio-title {
+	font-size: 1rem;
+}
+.ts-emp-quote {
+	font-size: 1.1rem;
+}
+/*  .ts-emp-thumb {
+	
+} */
+.ts-emp-thumb img{
+    object-fit: cover;
+    width: 100%;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 2px 2px 8px -1px rgba(0,0,0,0.51);
+	-moz-box-shadow: 2px 2px 8px -1px rgba(0,0,0,0.51);
+	box-shadow: 2px 2px 8px -1px rgba(0,0,0,0.51);
+}
+.ts-emp-thumb-group {	
+/* 	padding: 2rem; */
+/* 	max-width: 26rem; */
+/*     width: 26rem; */
+/* 	height: 47rem; */
+	flex-basis: 33.3%;
+}
+.ts-emp-thumb-group-inner {	
+	padding: 2rem;
+	max-width: 26rem;
+/*     width: 26rem; */
+/* 	height: 47rem; */
+/* 	flex-basis: 33.3%; */
+}
+.ts-emp-thumb-group p, .ts-employee-r-col p {
+	line-height: 1.8;
+}
+/* .ts-employee-r-col {
+	padding: 1rem;
+}
+.ts-employee-r-col-text {
+	margin: 1rem 5rem 0 0;
+}
+.ts-employee-l-col	{
+	padding: 1rem;
+}
+.ts-employee-l-col > div.alignnormal {
+	background-color: transparent;
+} */
 
+.ts-employee-slider {
+	width: 72% !important;
+}
+.ts-employee-slider div div ul li img {
+	-webkit-box-shadow: 2px 2px 8px -1px rgba(0,0,0,0.51);
+	-moz-box-shadow: 2px 2px 8px -1px rgba(0,0,0,0.51);
+	box-shadow: 2px 2px 8px -1px rgba(0,0,0,0.51);
+}
+.ts-mtt-back-button {
+	font-size: 1.3rem;
+	padding: 0 0 3rem 0;
+}
+.ts-mtt-back-button a {
+	text-decoration: none;
+	color: #464749 !important;
+}
+.ts-mtt-back-button a:hover {
+	color: #632122 !important;
+}
+/* ======  Meet the Team media queries   =========== */
 
+/* @media (min-width: 768px) {
+    .wp-block-columns {
+        margin-left: -2%;
+    }
+    .wp-block-columns .wp-block-column {
+        flex-basis: 31%;
+        margin-left: 2%;
+    }
+} */
+
+/* ****  media query to fix issue in MetaSlider **** */
+/* WATCH FOR WEIRD BEHAVIOR WHEN USING GUTENBERG COLUMNS! */
+@media (min-width: 600px) {
+/* 	.wp-block-column {
+		flex-grow: 1 !important;
+	} */
+}
 /* ======= END CONTENT OVERRIDES ========== */
 
 /* =========== FOOTER OVERRIDES ======== */
@@ -740,7 +945,10 @@ img.link-img {
 	margin: 0 auto;
 	font-size: 1.2rem;
 }
-
+/* Hide the powered by WP */
+.powered {
+	display: none;
+}
 /* =========== END FOOTER OVERRIDES ======== */
 
 /* ========== MEDIA QUERIES =============== */
@@ -753,9 +961,11 @@ img.link-img {
     height: 80rem;
 	} */
 }
-@media screen and (max-width: 1800px) {
-	
-	/* 	over 1800 px menu reverts to horizontal. */  
+
+
+@media screen and (max-width: 3000px) {
+	/* max-width number should match Mega menu mobile menu Responsive Breakpoint number */
+	/* 	over 3000 px menu reverts to horizontal. */  
 	/* These style are for vertical drop down menu */
 	/* add dotted border */
 	.mega-menu-item::after {
@@ -794,8 +1004,23 @@ img.link-img {
     display: inline-block;
 	}
 } 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
 	
+/* 	.ts-news-col-l {
+		flex-basis: 25% !important;
+	} */
+}
+@media screen and (max-width: 1200px) {
+	.push-right, .ts-emp-push-right {
+		top: 1rem;
+		transition-duration: 1s;
+	}
+	.ts-team-push-right {
+				margin-left: 18rem !important;
+	}
+/* 	.ts-news-col-l {
+		flex-basis: 30% !important;
+	} */
 }
 @media screen and (max-width: 980px) {
 	.scriptina-title-white-lg, .scriptina-title-grey-lg, .scriptina-title-ltgrey-lg  {
@@ -808,9 +1033,10 @@ img.link-img {
 		margin: 0 0 0 6rem;
 	}
 	
-	.push-right {
+	.push-right, .ts-emp-push-right, .ts-team-push-right {
 		margin-left: 11rem !important;
 		top: 1rem;
+		transition-duration: 1s;
 	}
 	.quote-block {
 		float: none;
@@ -854,10 +1080,15 @@ img.link-img {
 	width: 100%;
 	}
 	.grid-container {
-		padding-left: 0;
-	justify-content: center;
+		padding-left: 2rem;
+		justify-content: center;
 	}
 
+}
+@media screen and (max-width: 780px) {
+	.ts-news-col-l {
+	margin-left: 30%;
+	}
 }
 @media screen and (max-width: 768px) {
 	
@@ -867,7 +1098,7 @@ img.link-img {
 	.red-intro-text{
 		margin-left: 3rem;
 	}
-	.push-right {
+	.push-right, .ts-emp-push-right {
 		padding: 0 !important;
 		margin: 0 3rem !important;
 	}
@@ -882,6 +1113,10 @@ img.link-img {
    	width: 200px;
 	height: 200px;
 	}
+	.ts-emp-thumb-group{
+		flex-basis: 50%;
+	}
+
 }
 @media screen and (max-width: 568px) {
 	p, form	{
@@ -892,6 +1127,10 @@ img.link-img {
 	}
 	#mega-menu-wrap-header-menu {
     padding-left: 1rem;
+	}
+	.push-right, .ts-emp-push-right, .ts-team-push-right {
+		margin-left: 3rem !important;
+		transition-duration: 1s;
 	}
 	.quote-block {
 		margin-left: 3rem;
@@ -916,12 +1155,16 @@ img.link-img {
    	width: 150px;
 	height: 150px;
 	}
+	.ts-emp-thumb-group{
+		flex-basis: 70%;
+	}
 }
 
 @media screen and (max-width: 450px) {
 	.ts-logo-img img {
-    margin: 0.5rem 0;
-    width: 4rem !important;
+    margin: 3rem 0;
+    width: 7rem !important;
+    transition-duration: 1s;
 	}
 	.ts-logo-img, .ts-logo-content {
 	width: 50%;
@@ -931,13 +1174,20 @@ img.link-img {
 		margin: 0;
 	}
 	.ts-logo-img img{
-		display: none;
+		/*display: none;*/
 	}
 	.ts-logo-content h2 {
 		margin: 3rem .4rem;
 	}
 	.ts-logo-content h6 {
 		display: none;
+	}
+}
+@media screen and (max-width: 350px) {
+	.ts-logo-img img {
+    margin: 4rem 0;
+    width: 4rem !important;
+    transition-duration: 1s;
 	}
 }
 /* ========== END MEDIA QUERIES =============== */
@@ -957,7 +1207,7 @@ img.link-img {
 .red-intro-text {
 	z-index: 3;
 }
-.push-right {
+.push-right, .ts-emp-push-right, .ts-team-push-right {
 	z-index: 4;
 }
 #mega-menu-wrap-header-menu {
