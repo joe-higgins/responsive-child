@@ -51,7 +51,7 @@ dark grey #818386
 	font-weight: normal;
 	font-style: normal;
 }
-/* @font-face{ 
+/* @font-face{
 	font-family: 'MyWebFont';
 	src: url('WebFont.eot');
 	src: url('WebFont.eot?iefix') format('eot'),
@@ -119,8 +119,8 @@ margin: 0;
     display: none;
 }
 /*remove post meta display*/
-.post-meta { 
-display: none !important; 
+.post-meta {
+display: none !important;
 }
 
 /*remove background color for contact form submit button*/
@@ -206,7 +206,7 @@ blockquote {
 	/* Wrapper for main text below hero image */
 .background-icon	{
 	position: relative;
-	top: 0rem; 
+	top: 0rem;
 /* 	2 */
 	margin: 0rem 0 0rem 0;
 /* 	-3t -3b*/
@@ -412,7 +412,7 @@ a.mega-menu-link:before {
 	pink #CBA4A8
 	baby blue #9BC6C9
 	biege #FEDEB0
-	dark grey #818386 
+	dark grey #818386
 	*/
 
 	/* HOME menu item */
@@ -526,8 +526,8 @@ a.mega-menu-link:before {
 #place_wrap  {
 	margin: 0;
 	padding: 0 0 0 0;
-	
-} 
+
+}
 img.banner-img-lg, .banner-img-lg img {
 /* 	position: relative;
 	width: 100vw;
@@ -594,7 +594,7 @@ form div {
 .caldera-grid *, .caldera-grid label {
 	font-size: 1.4rem;
 	font-weight: 300 !important;
-} 
+}
 .caldera-grid h2 {
 	color: #632122;
 	text-transform: uppercase;
@@ -706,6 +706,7 @@ img.link-img {
     top: 0;
 	margin-left: 50rem !important;
 	padding-right: 5rem;
+	max-width: 70vw !important;
 }
 .ts-employee-header {
 /* 	height: 300px;
@@ -726,7 +727,7 @@ img.link-img {
 	font-size: 1.1rem;
 }
 /*  .ts-emp-thumb {
-	
+
 } */
 .ts-emp-thumb img{
     object-fit: cover;
@@ -738,14 +739,14 @@ img.link-img {
 	-moz-box-shadow: 2px 2px 8px -1px rgba(0,0,0,0.51);
 	box-shadow: 2px 2px 8px -1px rgba(0,0,0,0.51);
 }
-.ts-emp-thumb-group {	
+.ts-emp-thumb-group {
 /* 	padding: 2rem; */
 /* 	max-width: 26rem; */
 /*     width: 26rem; */
 /* 	height: 47rem; */
 	flex-basis: 33.3%;
 }
-.ts-emp-thumb-group-inner {	
+.ts-emp-thumb-group-inner {
 	padding: 2rem;
 	max-width: 26rem;
 /*     width: 26rem; */
@@ -815,20 +816,20 @@ img.link-img {
     line-height: inherit;
 }
 #footer-wrapper {
-	
+
 }
 #colophon-widget {
-	
+
 	color: #632122;
 	font-size: 1.4rem;
 	width: 100%;
 	margin: 0 auto;
-    text-align: center;	
+    text-align: center;
 }
 .ts-footer-grid {
 	float: left;
 	width: 22%;
-	margin: 1rem 1rem;	
+	margin: 1rem 1rem;
 }
 
 #custom_html-6 {
@@ -879,7 +880,7 @@ img.link-img {
 	float: left;
 	width: 42%;
 }
-.widget-wrapper {  
+.widget-wrapper {
 	border-radius: 0 !important;
     margin: 0 0 0 2rem;
     padding: 0;
@@ -913,9 +914,9 @@ img.link-img {
 	width: 88%;
 }
 #members-content {
-	width: 68%;	
+	width: 68%;
 }
-#insurance-content {    
+#insurance-content {
 	width: 25%;
 }
 .profiled-on-item img, .members-item img, .insurance-item img {
@@ -965,7 +966,7 @@ img.link-img {
 
 @media screen and (max-width: 3000px) {
 	/* max-width number should match Mega menu mobile menu Responsive Breakpoint number */
-	/* 	over 3000 px menu reverts to horizontal. */  
+	/* 	over 3000 px menu reverts to horizontal. */
 	/* These style are for vertical drop down menu */
 	/* add dotted border */
 	.mega-menu-item::after {
@@ -980,7 +981,7 @@ img.link-img {
 	.mega-sub-menu .mega-menu-item:after, .mega-menu-item:last-child:after {
 		border: none !important;
 	}
-	
+
   	#mega-menu-wrap-header-menu {
       background: none;
       position: absolute;
@@ -1003,12 +1004,12 @@ img.link-img {
 	#mega-menu-wrap-header-menu #mega-menu-header-menu li.mega-menu-item a.mega-menu-link:before {
     display: inline-block;
 	}
-} 
+}
 @media screen and (max-width: 1500px) {
-	
-/* 	.ts-news-col-l {
-		flex-basis: 25% !important;
-	} */
+	.ts-team-push-right {
+				max-width: 60vw !important;
+
+	}
 }
 @media screen and (max-width: 1200px) {
 	.push-right, .ts-emp-push-right {
@@ -1017,6 +1018,7 @@ img.link-img {
 	}
 	.ts-team-push-right {
 				margin-left: 18rem !important;
+					max-width: 90vw !important;
 	}
 /* 	.ts-news-col-l {
 		flex-basis: 30% !important;
@@ -1032,7 +1034,7 @@ img.link-img {
 		width: 92%;
 		margin: 0 0 0 6rem;
 	}
-	
+
 	.push-right, .ts-emp-push-right, .ts-team-push-right {
 		margin-left: 11rem !important;
 		top: 1rem;
@@ -1091,7 +1093,7 @@ img.link-img {
 	}
 }
 @media screen and (max-width: 768px) {
-	
+
 	blockquote {
 	    padding: 0 1em;
 	}
@@ -1156,7 +1158,7 @@ img.link-img {
 	height: 150px;
 	}
 	.ts-emp-thumb-group{
-		flex-basis: 70%;
+		flex-basis: 100%;
 	}
 }
 
@@ -1168,7 +1170,7 @@ img.link-img {
 	}
 	.ts-logo-img, .ts-logo-content {
 	width: 50%;
-   
+
 	}
 	.ts-logo-content {
 		margin: 0;
